@@ -9,7 +9,7 @@ function SongList({songs,handleClick}) {
                 {songs.map((song) => (
                     <div onClick={() => {
                         handleClick(song.title, song.image, song.completion, song.total, song.unique)
-                    }} className='shadow-sm m-3 font-bold cursor-pointer hover:scale-y-[1.1] hover:border border-t-0 border-b-4-white hover:bg-white/40'>{song.title}</div>
+                    }} className='shadow-sm m-3 font-bold cursor-pointer hover:scale-y-[1.1] hover:border border-t-0 border-b-4-white hover:bg-white/40 active:bg-white/40'>{song.title}</div>
                 ))}
             </div>
         </div>
